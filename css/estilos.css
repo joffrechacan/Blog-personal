@@ -1,0 +1,174 @@
+/* Reset básico para márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f7faff;
+    color: #333;
+    padding: 20px;
+}
+
+header {
+    background-color: #005f73; /* Azul más oscuro */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1rem;
+}
+
+nav {
+    margin-top: 20px;
+    background-color: #e2effa; /* Azul suave */
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #003d4d; /* Azul más oscuro para hover */
+}
+
+main {
+    margin-top: 30px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+#Bienvenido h2 {
+    font-size: 2rem;
+    color: #003d4d; /* Azul más oscuro */
+}
+
+#Bienvenido img.foto-perfil {
+    max-width: 150px;
+    border-radius: 50%;
+    margin-top: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Bienvenido p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-top: 20px;
+}
+
+#Ultimos Proyectos article {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#Ultimos Proyectos h3 {
+    font-size: 1.8rem;
+    color: #003d4d; /* Azul más oscuro */
+}
+
+#Ultimos Proyectos p {
+    font-size: 1.1rem;
+    color: #777;
+}
+
+#Ultimos Proyectos a {
+    text-decoration: none;
+    color: #0077b6;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+#Ultimos Proyectos a:hover {
+    color: #003d4d; /* Azul más oscuro para hover */
+}
+
+footer {
+    background-color: #005f73; /* Azul más oscuro */
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+    margin-bottom: 10px;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+footer a:hover {
+    color: #003d4d; /* Azul más oscuro para hover */
+}
+/* 1. Estilos para la imagen: Redondeada y más pequeña */
+.imagen-futbol { /* Asume que esta es la clase de tu imagen (<img>) o su contenedor */
+    width: 200px; /* Ajusta este valor al tamaño que desees, por ejemplo, 200px */
+    height: 200px; /* Mantener la misma altura para que sea cuadrada antes de redondear */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    border-radius: 50%; /* Esto la hace perfectamente redondeada */
+    margin-right: 20px; /* Añade un espacio entre la imagen y el texto */
+}
+
+/* 2. Estilos para centrar el título con el texto */
+/* Asume que tienes un contenedor principal que envuelve al título, la imagen y el texto. */
+.seccion-futbol {
+    display: flex; /* Habilita el layout flexible */
+    align-items: center; /* **Esto centra verticalmente la imagen con respecto a los otros elementos** */
+    /* Podrías necesitar un ancho máximo (max-width) aquí si el diseño lo requiere */
+}
+
+/* 3. Ajuste para el título (si es un h2, h3, etc.) y el párrafo */
+.titulo-futbol { /* Clase para la palabra "Jugar fútbol" */
+    text-align: center; /* Esto ya no es necesario si usas flexbox, pero por si acaso */
+    width: 100%; /* Para que ocupe todo el ancho disponible si no está en el flexbox */
+}
+
+.contenedor-contenido { /* Contenedor que agrupa la imagen y el texto */
+    display: flex; 
+    align-items: center; /* Alinear verticalmente los ítems */
+    margin-top: 15px; /* Espacio después del título principal */
+}
+
+.texto-futbol {
+    flex-grow: 1; /* Permite que el texto ocupe el espacio restante */
+}
